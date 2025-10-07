@@ -25,9 +25,9 @@ class BaseChrome(unittest.TestCase):
     def testNumberOfRows(self) -> None:
         rows = self.table.find_elements(By.TAG_NAME,"tr")
         self.assertEqual(7,len(rows), "la tabla deberia tener 7 filas")
-        
+
     def testLastRowHasNumberOfCols(self) -> None:
-        row = self.table.find_element(By.XPATH,"last(tr)")
+        row = self.table.find_element(By.XPATH,".//tr[last()]")
         cols = row.find_elements(By.TAG_NAME,"td")
         self.assertEqual(3,len(cols), "la ultima fila deberia tener 3 columnas")
 
