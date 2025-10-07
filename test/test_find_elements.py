@@ -45,6 +45,12 @@ class ColeccionEncontrarElementos(unittest.TestCase):
         link = self.driver.find_element(By.PARTIAL_LINK_TEXT, 'notificaciones sin leer')
         # print(link.get_attribute('href'))
 
+    def testFindByXpathWithAttr(self) -> None:
+        input_password = self.driver.find_element(By.XPATH, '/html/body/form/div[2]/input[@class="login-p"]')
+        print(input_password.get_attribute('type'))
+        print(input_password.text)
+
+
 
     def testFindByXpath(self) -> None:
         submit_button = self.driver.find_element(By.XPATH, '/html/body/form/button')
