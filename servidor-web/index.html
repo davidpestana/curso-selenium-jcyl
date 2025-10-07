@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-
+/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/logout">Logout</a></li>
+                <li><a href="/notificaciones">Tienes 15 notificaciones sin leer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="titulo-principal">Lista de usuarios</h1>
+    <form id="login-form">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" class="login-u" name="user">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" class="login-p" name="pass">
+        </div>
+        <button type="submit" name="login" id="btn-crear-usuario" class="btn">Crear</button>
+    </form>
+    <div id="lista-usuarios">
+        <ul>
+            <li>
+                <span>Usuario 1</span>
+                <button type="button" class="btn btn-editar">Editar</button>
+            </li>
+            <li>
+                <span>Usuario 2</span>
+                <button type="button" class="btn btn-editar">Editar</button>
+            </li>
+            <li>
+                <span>Usuario 3</span>
+                <button type="button" class="btn btn-editar" disabled>Editar</button>
+            </li>
+            <li>
+                <span>Usuario 4</span>
+                <button type="button" class="btn btn-editar" disabled>Editar</button>
+            </li>
+            <li>
+                <span>Charly Falco</span>
+                <button type="button" class="btn btn-editar" disabled>Editar</button>
+            </li>
+            59
+        </ul>
+    </div>
+    <img id="logo" width="100"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Selenium_Logo.png/1200px-Selenium_Logo.png"
+        alt="Logo de selenium">
+    <img id="otro-logo" width="100" src="https://oehha.ca.gov/sites/default/files/media/styles/width_340px/public/files/images/chemical/selenium.jpg?itok=MsFiIeu
+U">
+</body>
+
+</html>
