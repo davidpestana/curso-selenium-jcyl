@@ -57,3 +57,11 @@ Instalación en futuros entornos:
 ```bash
 pip install -r requirements.txt
 ```
+
+
+Instalar Extension de VSCODE para Docker
+Ejecutar desde el archivo docker compose el boton run service
+o en su defecto ejecutar en terminal
+```bash
+docker compose up -d
+```
