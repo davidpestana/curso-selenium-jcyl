@@ -17,10 +17,7 @@ class BaseChrome(unittest.TestCase):
         self.driver.get(URL_PAGE)
 
 
-
-
-    def tutest(self) -> None:
-        print("paso por chrome")
+    def test(self) -> None:
         pass
 
 

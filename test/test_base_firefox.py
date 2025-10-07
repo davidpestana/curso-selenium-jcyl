@@ -15,18 +15,11 @@ class BaseFirefox(unittest.TestCase):
 
     def setUp(self) -> None:
         self.driver.get(URL_PAGE)
-        print("paso por aqui")
 
 
-    def tutest1(self) -> None:
-        pass
-
-    def tutest2(self) -> None:
-        pass    
-    
-    def tutest3(self) -> None:
-        pass
-
+    def test1(self) -> None:
+        print(self.driver.title)
+        
 
     @classmethod
     def tearDownClass(cls) -> None:
