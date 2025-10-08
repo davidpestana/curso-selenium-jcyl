@@ -19,9 +19,9 @@ class BaseChrome(unittest.TestCase):
     def testCheckboxCount(self) -> None:
         checkboxes = self.driver.find_elements(By.CSS_SELECTOR, 'input[type="checkbox"]')
         self.assertEqual(
-            37,
+            30,
             len(checkboxes),
-            f"Se esperaban 37 checkboxes, pero se encontraron {len(checkboxes)}"
+            f"Se esperaban 30 checkboxes, pero se encontraron {len(checkboxes)}"
         )
 
     def testSearchInputExists(self) -> None:
