@@ -19,22 +19,24 @@ class BaseChrome(unittest.TestCase):
     def testCheckboxCount(self) -> None:
         checkboxes = self.driver.find_elements(By.CSS_SELECTOR, 'input[type="checkbox"]')
         self.assertEqual(
-            30,
+            37,
             len(checkboxes),
-            f"Se esperaban 30 checkboxes, pero se encontraron {len(checkboxes)}"
+            f"Se esperaban 37 checkboxes, pero se encontraron {len(checkboxes)}"
         )
 
     def testSearchInputExists(self) -> None:
+        # Campo de texto principal en búsqueda avanzada
         search_input = self.driver.find_element(By.CSS_SELECTOR, 'input[name="search"]')
         self.assertIsNotNone(search_input, "El campo de búsqueda no fue encontrado")
 
     def testSearchButtonExists(self) -> None:
-        search_button = self.driver.find_element(By.CSS_SELECTOR, 'input[type="submit"]')
+        # Botón de búsqueda principal dentro del formulario de búsqueda avanzada
+        search_button = self.driver.find_element(By.CSS_SELECTOR, '#powersearch button[type="submit"]')
         self.assertIsNotNone(search_button, "El botón de búsqueda no fue encontrado")
 
     def testSearchInputAndButtonExist(self) -> None:
         search_input = self.driver.find_element(By.CSS_SELECTOR, 'input[name="search"]')
-        search_button = self.driver.find_element(By.CSS_SELECTOR, 'input[type="submit"]')
+        search_button = self.driver.find_element(By.CSS_SELECTOR, '#powersearch button[type="submit"]')
         self.assertIsNotNone(search_input, "Falta el campo de búsqueda")
         self.assertIsNotNone(search_button, "Falta el botón de búsqueda")
 
