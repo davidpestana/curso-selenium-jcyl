@@ -10,12 +10,15 @@ scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
-    <div id="working-radios">
-        <input type="radio" id="opt1" name="working" value="Yes">
-        <label for="opt1">Yes</label>
-        <input type="radio" id="opt2" name="working" value="No" checked>
-        <label for="opt2">No</label>
-    </div>
+    <button type="button" id="show-alert">Pulsa para mostrar alert</button>
 </body>
+<script>
+    window.onload = () => {
+        var btn = document.getElementById('show-alert');
+        btn.addEventListener('click', () => {
+            var text = prompt('Has pulsado el botón...');
+        });
+    }
+</script>
 
 </html>
