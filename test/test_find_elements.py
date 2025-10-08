@@ -57,6 +57,11 @@ class ColeccionEncontrarElementos(unittest.TestCase):
         # print(submit_button.get_attribute('type'))
         # print(submit_button.text)
 
+    def testFindByCssSelectorAbsolute(self) -> None:
+        username_label_1 = self.driver.find_element(By.CSS_SELECTOR, 'html body form div label')
+        username_label_2 = self.driver.find_element(By.CSS_SELECTOR, 'html > body > form > div > label')
+
+
     @classmethod
     def tearDownClass(cls) -> None:
         cls.driver.quit()
