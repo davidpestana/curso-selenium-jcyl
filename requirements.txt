@@ -1,3 +1,4 @@
 selenium
 webdriver-manager
 ddt
+mysql-connector-python
