@@ -1,0 +1,9 @@
+<h2>Calculadora Angular</h2>
+
+<input id="num1" type="number" placeholder="Número 1">
+<input id="num2" type="number" placeholder="Número 2">
+<button id="btn" (click)="multiplicar()">Multiplicar</button>
+
+<p id="resultado" *ngIf="resultado !== null">
+  Resultado: {{ resultado }}
+</p>
